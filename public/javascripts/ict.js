@@ -1,0 +1,2 @@
+"use strict";$(document).ready(function(){var r=$(".stories__list"),s=$(".stories__image-list");s.slick({slidesToShow:1,slidesToScroll:1,arrows:!1,fade:!0,asNavFor:r}),r.slick({vertical:!0,slidesToShow:3,centerMode:!1,arrows:!0,asNavFor:s,nextArrow:$(".arrow__next"),prevArrow:$(".arrow__prev"),responsive:[{breakpoint:1200,settings:{vertical:!1,slidesToShow:1}}]}),$(".slick-next").on("click")});
+//# sourceMappingURL=../javascripts/common.js.map

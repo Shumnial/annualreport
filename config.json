@@ -1,0 +1,55 @@
+{
+	"devStatic": "/",
+	"buildStatic": "",
+	"buildDir": "build",
+	"port": 8080,
+	"dpe": false,
+	"commonData": ["data"],
+	"defaultLayout": "layout.html", 
+	"emptyLayout": "empty_layout.html", 
+	"contentOnly": false,
+	"storage": "https://your-path-to-blob",
+	"buildIgnore": ["less", "javascripts/sources"],
+	"pages": [
+		{
+			"name": "index",
+			"route": "/",
+			"pageData": ["index"],
+			"pageVars": {
+				"title": "Заголовок страницы",
+				"description": "Описание страницы",
+				"og": true
+			}
+		},
+		{
+			"name": "report",
+			"route": "/report",
+			"pageData": [],
+			"pageVars": {
+				"title": "report 2016",
+				"description": "Huawei report 2016",
+				"og": true
+			}
+		},
+		{
+			"name": "huaweiCGI",
+			"route": "/huaweiCGI",
+			"pageData": [],
+			"pageVars": {
+				"title": "",
+				"description": "Huawei CGI",
+				"og": true
+			}
+		},
+		{
+			"name": "ict",
+			"route": "/ict",
+			"pageData": [],
+			"pageVars": {
+				"title": "",
+				"description": "Huawei ict",
+				"og": true
+			}
+		}
+	]
+}
