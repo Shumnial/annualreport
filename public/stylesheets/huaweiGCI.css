@@ -143,6 +143,9 @@ body {
 *:after {
   box-sizing: border-box;
 }
+button {
+  font-family: "Roboto", Arial, sans-serif;
+}
 @font-face {
   font-family: 'wf_segoe-ui';
   src: url('https://i.s-microsoft.com/fonts/segoe-ui/cyrillic/light/latest.eot');

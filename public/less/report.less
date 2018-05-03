@@ -18,6 +18,9 @@
 	&_fff {
 		background: #fff;
 	}
+	&_darkblue {
+		background-color: #1d6297;
+	}
 }
 .c-title {
 	font-family: "Roboto", Arial, sans-serif;
@@ -254,7 +257,7 @@ h4.c-title {
 		&:active {
 			transform: translateY(2px);
 		}
-		& span {
+		& span, a {
 			padding-bottom: 8px;
 			font-family: "Roboto", Arial, sans-serif;
 			font-size: 16px;
@@ -263,6 +266,7 @@ h4.c-title {
 			color: #000;
 			cursor: pointer;
 			transition: all .1s ease;
+			text-decoration: none;
 			&:hover {
 				color: #b92121;
 				border-bottom: 1px solid #b92121;
@@ -511,17 +515,17 @@ h4.c-title {
 		&_6 {
 			height: 6px;
 		}
-		&_32 {
-			height: 50px;
-		}
-		&_04 {
-			height: 21px;
-		}
-		&_24 {
-			height: 35px;			
+		&_15 {
+			height: 20px;
 		}
 		&_28 {
-			height: 40px;	
+			height: 40px;
+		}
+		&_2 {
+			height: 25px;			
+		}
+		&_17 {
+			height: 25px;	
 		}
 		&_47 {
 			height: 75px;
@@ -667,6 +671,35 @@ h4.c-title {
 			margin-right: 0;
 		}
 	}
+	@media screen and (max-width: 1200px) {
+		&__wrapper {
+			flex-direction: column;
+			align-items: center;
+		}
+		&__item {
+			width: 50%;
+			margin: 0;
+			margin-bottom: 30px;
+		}
+	}
+	@media screen and (max-width: 736px) {
+		&__item {
+			font-size: 22px;
+			span {
+				font-size: 34px;
+			}
+			&:not(:first-child) span {
+				&::before {
+					font-size: 22px;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 550px) {
+		&__item {
+			width: 100%;
+		}
+	}
 }
 .c-regions {
 	padding: 80px 0;
@@ -718,6 +751,216 @@ h4.c-title {
 			img {
 				display: none;
 			}
+		}
+	}
+}
+.c-innovations__bg {
+	background: url("/images/report/innovations-bg.jpg") no-repeat top;
+	background-size: cover;
+}
+.c-innovations {
+	position: relative;
+	padding: 80px 0;
+	min-height: 332px;
+	.c-title {
+		font-size: 30px;
+		color: white;
+		width: 49%;
+	}
+	.c-text {
+		color: white;
+		margin-bottom: 20px;
+	}
+
+	&__wrapper {
+		display: none;
+		min-height: 332px;
+		overflow: hidden;
+		&_active {
+			display: flex;
+		}
+	}
+
+	&__links {
+		position: absolute;
+		top: -42px;
+		width: 50%;
+	}
+	&__link {
+		width: 32%;
+		color: #1d6297;
+		font-size: 18px;
+		padding: 10px;
+		background-color: white;
+		border: 0;
+		outline: 0;
+		cursor: pointer;
+
+		&_active {
+			background-color: #1d6297;
+			color: white;
+		}
+	}
+
+	&__item {
+		width: 45%;
+		&:nth-child(1) {
+			margin-right: 5%;
+			.c-text {
+				padding-left: 20px;
+				position: relative;
+				&::before {
+					position: absolute;
+					content: '';
+					top: 4px;
+					left: 0;
+					width: 8px;
+					height: 8px;
+					background-color: white;
+				}
+			}
+		}
+		.c-title {
+			font-size: 22px;
+			width: 100%;
+		}
+		.c-text {
+			font-size: 14px;
+			font-weight: 400;
+
+			span {
+				font-size: 30px;
+			}
+		}
+
+		&_flex {
+			display: flex;
+			justify-content: space-between;
+		}
+		&_invest {
+			.c-innovations__inner-item {
+				width: 45%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				.c-text {
+				//Отладка для IE
+					display: flex;
+					justify-content: center;
+					flex-direction: column;
+					text-align: center;
+				}
+			}
+		}
+		&_introduce {
+			text-align: center;
+			.c-innovations__item-wrapper {
+				display: flex;
+			}
+			.c-innovations__inner-item {
+				width: 47%;
+				float: left;
+				background-color: #2694ca;
+				padding: 20px 10px;
+				&:not(:last-child) {
+					margin-right: 3.5%;
+				}
+				.c-text {
+					display: inline-block;
+					margin-bottom: 0;
+					span {
+						display: block;
+					}
+				}
+			}
+		}
+		&_develop {
+			.c-innovations__inner-item {
+				display: flex;
+				justify-content: center;
+				width: 395px;
+				height: 310px;
+				background: url("/images/report/360deg.png") no-repeat top;
+			}
+			.c-text {
+				padding-top: 80px;
+				width: 50%;
+				margin-bottom: 0;
+				text-align: center;
+				span {
+					display: block;
+				}
+			}
+		}
+	}
+
+	&__item-wrapper {
+		
+		justify-content: space-between;
+		margin-bottom: 30px;
+	}
+
+	&__circle {
+		width: 165px;
+		height: 165px;
+		margin-bottom: 20px;
+		&_15 {
+			background: url("/images/report/circle15.png") no-repeat top;
+		}
+		&_45 {
+			background: url("/images/report/circle45.png") no-repeat top;
+		}
+		.c-text_circle {
+			padding-top: 40px;
+			font-size: 14px;
+			
+			span {
+				display: block;
+				font-size: 30px;
+			}
+		}
+	}
+	@media screen and (max-width: 960px) {
+		&__wrapper {
+			flex-direction: column;
+		}
+
+		&__links {
+			width: 100%;
+		}
+
+		&__item {
+			width: 100%;
+		}
+	}
+	@media screen and (max-width: 736px) {
+		.c-title {
+			font-size: 26px;
+			width: 80%;
+		}
+	}
+	@media screen and (max-width: 500px) {
+		.c-title {
+			font-size: 22px;
+			width: 100%;
+		}
+		&__item:nth-child(1n) {
+			margin-right: 0;
+			margin-bottom: 30px;
+		}
+		&__wrapper {
+			display: flex;
+			min-height: auto;
+
+			&:last-child .c-innovations__item {
+				margin-bottom: 0;
+			}
+		}
+		&__links {
+			display: none;
+		}
+		&__item:nth-child(2n) {
+			display: none;
 		}
 	}
 }
@@ -859,14 +1102,6 @@ h4.c-title {
 		}
 	}
 }
-@media screen and (max-width: 960px) {
-	.c-reference {
-		&__item {
-			width: 100%;
-			float: none;
-		}
-	}
-}
 .c-footer {
 	margin-top: 40px;
 	background: #fff;
@@ -891,5 +1126,48 @@ h4.c-title {
 			line-height: 1.2;
 			color: #888;
 		}
+	}
+}
+@media screen and (max-width: 960px) {
+	.c-reference {
+		&__item {
+			width: 100%;
+			float: none;
+		}
+	}
+}
+@media screen and (max-width: 500px) {
+	.c-container {
+		padding: 0 15px;
+	}
+}
+
+.appear-from-right {
+	animation-name: appear-from-right;
+	animation-duration: 0.4s;
+}
+
+.appear-fade-in {
+	animation-name: appear-fade-in;
+	animation-duration: 0.4s;
+}
+
+@keyframes appear-from-right {
+	from {
+		opacity: 0;
+		transform: translateX(200px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes appear-fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
 	}
 }

@@ -1,2 +1,2 @@
-"use strict";
+"use strict";$(document).ready(function(){function n(){var n=$(this),a=n.attr("data-name");$(".c-innovations__link_active").removeClass("c-innovations__link_active"),n.addClass("c-innovations__link_active"),$(".c-innovations__wrapper_active").removeClass("c-innovations__wrapper_active"),$('.c-innovations__wrapper[data-name="'+a+'"]').addClass("c-innovations__wrapper_active")}$(".c-innovations__link").on("click",n)});
 //# sourceMappingURL=../javascripts/common.js.map
