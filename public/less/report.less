@@ -78,6 +78,12 @@ h4.c-title {
 	line-height: 1.4;
 	color: #000;
 	margin-bottom: 40px;
+	&_14px {
+		font-size: 14px;
+	}
+	&_18px {
+		font-size: 18px;
+	}
 	a {
 		font-family: "Roboto", Arial, sans-serif;
 		font-size: 18px;
@@ -217,7 +223,7 @@ h4.c-title {
 	background: transparent;
 }
 .c-top__bg {
-	background: url("/images/report/top-bg.jpg") no-repeat left;
+	background: url("../images/report/top-bg.jpg") no-repeat left;
 	background-size: cover;
 }
 .c-header {
@@ -242,10 +248,10 @@ h4.c-title {
 			z-index: 3;
 			width: 40px;
 			height: 40px;
-			background: url("/images/report/open.png") no-repeat center;
+			background: url("../images/report/open.png") no-repeat center;
 			background-size: contain;
 			&.close {
-				background: url("/images/report/close.png") no-repeat center;
+				background: url("../images/report/close.png") no-repeat center;
 				background-size: contain;
 			}
 		}
@@ -257,7 +263,7 @@ h4.c-title {
 		&:active {
 			transform: translateY(2px);
 		}
-		& span, a {
+		a {
 			padding-bottom: 8px;
 			font-family: "Roboto", Arial, sans-serif;
 			font-size: 16px;
@@ -271,6 +277,18 @@ h4.c-title {
 				color: #b92121;
 				border-bottom: 1px solid #b92121;
 			}
+		}
+		&--active {
+			padding-bottom: 8px;
+			font-family: "Roboto", Arial, sans-serif;
+			font-size: 16px;
+			font-weight: 300;
+			line-height: 1.2;
+			cursor: pointer;
+			transition: all .1s ease;
+			text-decoration: none;
+			color: #b92121;
+			border-bottom: 1px solid #b92121;
 		}
 	}
 }
@@ -755,7 +773,7 @@ h4.c-title {
 	}
 }
 .c-innovations__bg {
-	background: url("/images/report/innovations-bg.jpg") no-repeat top;
+	background: url("../images/report/innovations-bg.jpg") no-repeat top;
 	background-size: cover;
 }
 .c-innovations {
@@ -825,7 +843,6 @@ h4.c-title {
 			width: 100%;
 		}
 		.c-text {
-			font-size: 14px;
 			font-weight: 400;
 
 			span {
@@ -839,7 +856,7 @@ h4.c-title {
 		}
 		&_invest {
 			.c-innovations__inner-item {
-				width: 45%;
+				width: 47%;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
@@ -849,6 +866,8 @@ h4.c-title {
 					justify-content: center;
 					flex-direction: column;
 					text-align: center;
+					flex-wrap: wrap;
+					width: 100%;
 				}
 			}
 		}
@@ -880,7 +899,7 @@ h4.c-title {
 				justify-content: center;
 				width: 395px;
 				height: 310px;
-				background: url("/images/report/360deg.png") no-repeat top;
+				background: url("../images/report/360deg.png") no-repeat top;
 			}
 			.c-text {
 				padding-top: 80px;
@@ -905,10 +924,10 @@ h4.c-title {
 		height: 165px;
 		margin-bottom: 20px;
 		&_15 {
-			background: url("/images/report/circle15.png") no-repeat top;
+			background: url("../images/report/circle15.png") no-repeat top;
 		}
 		&_45 {
-			background: url("/images/report/circle45.png") no-repeat top;
+			background: url("../images/report/circle45.png") no-repeat top;
 		}
 		.c-text_circle {
 			padding-top: 40px;
